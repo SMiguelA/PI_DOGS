@@ -1,0 +1,83 @@
+.fondo{
+    height: 100%;
+}
+
+.content{
+    background-color: #F5CDA2;
+    height: 20em;
+    border-radius: 20px;
+    border: 10px solid #8d6131;
+    box-shadow: 0 20px 35px #382e23;
+    margin-left: 40em;
+    margin-right: 40em;
+    margin-top: 10em;
+    padding-bottom: 1em;
+}
+
+.divContInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.input{
+    background-color: transparent;
+    font-family: 'DynaPuff', cursive;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 15em;
+    height: 2em;
+    z-index: 2;
+    margin-top: 2em;
+}
+.inputError{
+    background-color: transparent;
+    font-family: 'DynaPuff', cursive;
+    border: none;
+    border-bottom: 2px solid #942413;
+    outline: none;
+    width: 15em;
+    height: 2em;
+    z-index: 2;
+}
+
+.err{
+    z-index: 2;
+    color: #942413;
+    margin-top: 5px;
+}
+
+.label{
+    position: absolute;
+    margin-top: -3em;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+.input:focus ~ label {
+    transition: 0.2s;
+    margin-top: -6em;
+}
+.inputError:focus ~ label {
+    transition: 0.2s;
+    margin-top: -6em;
+}
+
+h1{
+    font-size: 3em;
+}
+
+button{
+    height: 3em;
+    font-family: 'DynaPuff', cursive;
+    border-radius: 1em;
+    border: 2px solid #382e23;
+    cursor: pointer;
+    background-color: #9E724E;
+    color: #f7e1c9;
+    font-size: 15px;
+}

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 .App {
   text-align: center;
+  margin-top: -1.5em;
+  margin-bottom: -1.5em;
+  font-family: 'DynaPuff', cursive;
 }
 
 .App-logo {

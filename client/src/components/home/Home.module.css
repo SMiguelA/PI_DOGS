@@ -1,0 +1,18 @@
+.container{
+    background-color: grey;
+    display: inline-block;
+    background-image: linear-gradient(rgba(216, 136, 45, 0.2), rgba(216, 136, 45, 0.2)), url('../../img/fondoHuellas.jpg');
+    width: 100%;
+}
+
+.componentsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.paginationCont{
+    display: flex;
+    justify-content: space-around;
+}

@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(rgba(216, 136, 45, 0.2), rgba(216, 136, 45, 0.2)), url('../img/fondoInicio.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html{
+  height: -webkit-fill-available;
 }
 
 code {
