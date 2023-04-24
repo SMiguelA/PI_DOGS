@@ -3,6 +3,21 @@
     display: inline-block;
     background-image: linear-gradient(rgba(216, 136, 45, 0.2), rgba(216, 136, 45, 0.2)), url('../../img/fondoHuellas.jpg');
     width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.container h1{
+    margin-top: 2em;
+}
+
+.container::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-thumb{
+    background-color: #8d6131;
+    border-radius: 5em;
 }
 
 .componentsContainer{
@@ -10,9 +25,90 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: -2em;
 }
 
 .paginationCont{
     display: flex;
     justify-content: space-around;
+}
+
+.loading{
+    margin-bottom: 15em;
+}
+
+.select{
+    height: 3em;
+    width: 13.5em;
+    font-family: 'DynaPuff', cursive;
+    border-radius: 0.4em;
+    border: 2px solid #382e23;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../../img/arrowSelect.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: #382e23;
+    outline: none;
+    appearance: none;
+    padding-left: 1em;
+    margin-left: 5em;
+}
+
+.select option{
+    background-color: #f7e1c9;
+    color: #382e23;
+}
+
+.selectWeight{
+    width: 17em;
+    height: 3em;
+    font-family: 'DynaPuff', cursive;
+    border-radius: 0.4em;
+    border: 2px solid #382e23;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../../img/arrowSelect.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: #382e23;
+    outline: none;
+    appearance: none;
+    padding-left: 1em;
+    margin-left: 5em;
+}
+
+.selectWeight option{
+    background-color: #f7e1c9;
+    color: #382e23;
+}
+
+.filtros{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(245, 205, 162, 0.6);
+    backdrop-filter: blur(10px);
+    height: 5em;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    border-bottom: 2px solid #8d6131;
+}
+
+.filtros button{
+    margin-left: 2em;
+}
+
+img{
+    height: 10em;
+}
+.errMessage{
+    color: #942413;
 }

@@ -13,7 +13,7 @@ const Dogs = ({ID, Name, Image,Temperament, Weight}) => {
             <Link to={`/dogs/detail/${ID}`} className={style.link}>
                 <h2>Name: <h3>{Name}</h3></h2>
                 <h2>Temperament: <h3>{temperaments ? temperaments : "Null"}</h3></h2>
-                <h2>Weight: <h3>{`${Weight[0]} - ${Weight[1]}`}</h3></h2>
+                <h2>Weight: <h3>{`${Weight[0]} - ${Weight[1]} kg`}</h3></h2>
             </Link>
         </div>
     );

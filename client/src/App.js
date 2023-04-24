@@ -2,6 +2,7 @@ import './css/App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import LandingPage from './components/landingPage/landingPage';
 import Home from './components/home/Home';
+import CreateDog from './components/form/CreateDog';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     navigate('/home');
   };
 
-  // ? validamos que no pueda ingresar a otra ruta sin loguearse
+  // ? validamos que no pueda ingresar a otra ruta sin loguearse con nombre
   useEffect(() => {
     !acces && navigate('/');
   },[acces]);
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage login={login} setAccess={setAccess} />} />
         <Route path='/home' element={<Home />} />
+        <Route path='/create_breed' element={<CreateDog />} />
       </Routes>
     </div>
   );

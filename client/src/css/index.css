@@ -9,9 +9,16 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 html{
-  height: -webkit-fill-available;
+  height: 100%;
+  overflow: hidden;
+}
+#root{
+  height: 100%;
 }
 
 code {

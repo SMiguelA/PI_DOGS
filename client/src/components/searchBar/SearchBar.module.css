@@ -1,0 +1,17 @@
+.searchbar{
+    width: 20em;
+    height: 3em;
+    background-image: url("../../img/searchIcon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 2.5em;
+    color: #382e23;
+    outline: none;
+    border: 2px solid #382e23;
+    border-radius: 1em;
+    background-color: transparent;
+    margin-left: 15em;
+    font-family: 'DynaPuff', cursive;
+    font-size: 15px;
+    padding-left: 20px;
+}
