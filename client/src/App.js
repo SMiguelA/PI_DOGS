@@ -3,6 +3,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import LandingPage from './components/landingPage/landingPage';
 import Home from './components/home/Home';
 import CreateDog from './components/form/CreateDog';
+import DogsDetail from './components/dogsDetails/DogsDetail';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/' element={<LandingPage login={login} setAccess={setAccess} />} />
         <Route path='/home' element={<Home />} />
         <Route path='/create_breed' element={<CreateDog />} />
+        <Route path='/dogs/detail/:id' element={<DogsDetail />} />
       </Routes>
     </div>
   );
